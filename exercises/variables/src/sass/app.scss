@@ -14,8 +14,8 @@ body {
     color: #fff;
   }
   &.btn-secondary {
-    border: 1px solid cadetblue;
-    background-color: peru;
+    border: 1px solid $patina;
+    background-color: $nebula;
     color: #000;
   }
   &:disabled {
