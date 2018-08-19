@@ -1,3 +1,9 @@
 @mixin range-thumb() {
- 
+  border: 1px solid $black;
+  box-shadow: 1px 1px 1px $black, 0px 0px 1px $gray;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: $white;
+  cursor: pointer;
 }
