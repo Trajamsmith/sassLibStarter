@@ -8,6 +8,22 @@
   cursor: pointer;
 }
 
+@mixin range-thumb-vendors() {
+  &::-webkit-slider-thumb {
+    @include range-thumb;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+
+  &::-moz-range-thumb {
+    @include range-thumb;
+  }
+
+  &::-ms-thumb {
+    @include range-thumb;
+  }
+}
+
 @mixin range-track() {
   width: 100%;
   height: 8.4px;
