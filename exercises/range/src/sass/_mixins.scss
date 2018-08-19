@@ -14,3 +14,29 @@
   cursor: pointer;
   animate: 0.2s;
 }
+
+@mixin range-track-vendors() {
+  &::-moz-range-track {
+    @include range-track;
+    box-shadow: 1px 1px 1px $black, 0px 0px 1px $gray;
+    background: $blue;
+    border-radius: 1.3px;
+    border: 0.2px solid $almost-black;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include range-track;
+    box-shadow: 1px 1px 1px $black, 0px 0px 1px $gray;
+    background: $blue;
+    border-radius: 1.3px;
+    border: 0.2px solid $almost-black;
+  }
+
+  &::-ms-track {
+    @include range-track;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+}
